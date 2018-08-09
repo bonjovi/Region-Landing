@@ -1,0 +1,47 @@
+.header {
+    background-color: $blue;
+    padding-top: 80px;
+
+    &__church {
+        margin-left: -80px;
+    }
+
+    &__info {
+        padding-top: 80px;
+    }
+
+    &__button {
+        padding: 10px 30px 10px 60px;
+        background-color: #1e60ab;
+        border: 2px solid #fff;
+        border-radius: 2px;
+        width: 170px;
+        margin-top: 35px;
+        cursor: pointer;
+        transition: color 0.5s;
+        transition: background-color 0.5s;
+
+        &:hover {
+            background-color: #fff;
+            color: #1e60ab;
+
+            &::before {
+                border-color: #1e60ab;
+            }
+        }
+
+        &::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 1px;
+            position: absolute;
+            border-top: 2px solid #fff;
+            border-left: 2px solid #fff;
+            transform: rotate(-135deg);
+            margin-top: 5px;
+            margin-left: -30px;
+            transition: border-color 1s;
+        }
+    }
+}

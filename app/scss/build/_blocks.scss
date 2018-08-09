@@ -1,0 +1,132 @@
+.header {
+    background-color: $blue;
+    padding-top: 80px;
+
+    &__church {
+        margin-left: -80px;
+    }
+
+    &__info {
+        padding-top: 80px;
+    }
+
+    &__button {
+        padding: 10px 30px 10px 60px;
+        background-color: #1e60ab;
+        border: 2px solid #fff;
+        border-radius: 2px;
+        width: 170px;
+        margin-top: 35px;
+        cursor: pointer;
+        transition: color 0.5s;
+        transition: background-color 0.5s;
+
+        &:hover {
+            background-color: #fff;
+            color: #1e60ab;
+
+            &::before {
+                border-color: #1e60ab;
+            }
+        }
+
+        &::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 1px;
+            position: absolute;
+            border-top: 2px solid #fff;
+            border-left: 2px solid #fff;
+            transform: rotate(-135deg);
+            margin-top: 5px;
+            margin-left: -30px;
+            transition: border-color 1s;
+        }
+    }
+}
+.text {
+    font-family: 'OpenSans Regular';
+
+    
+    &_small {
+        font-size: 13px;
+    }
+
+    &_medium {
+        font-size: 14px;
+    }
+
+    &_large {
+        font-size: 16px;
+    }
+
+    &_xlarge {
+        font-size: 30px;
+    }
+
+    &_bold {
+        font-family: 'OpenSans Bold';
+    }
+
+    &_white {
+        color: #fff;
+    }
+}
+.title {
+    
+    &_xsmall {
+        font-size: 16px;
+    }
+
+    &_small {
+        font-size: 18px;
+    }
+
+    &_medium {
+        font-size: 24px;
+    }
+
+    &_large {
+        font-size: 32px;
+    }
+
+    &_xlarge {
+        font-size: 38px;
+    }
+
+
+    &_thin {
+        font-family: 'MuseoSans Thin';
+    }
+
+    &_regular {
+        font-family: 'MuseoSans Regular';
+    }
+
+    &_bold {
+        font-family: 'MuseoSans Bold';
+    }
+
+    &_white {
+        color: #fff;
+    }
+
+    &_uppercase {
+        text-transform: uppercase;
+    }
+
+    &_underlined {
+        border-bottom: 3px solid #ff9668;
+    }
+
+    &_city {
+        display: flex;
+        height: 26px;
+        align-items: center;
+
+        & img {
+            margin-right: 25px;
+        }
+    }
+}
