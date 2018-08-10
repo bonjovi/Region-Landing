@@ -1,0 +1,11 @@
+.advantages {
+    padding-top: 50px;
+
+   &__item {
+       text-align: center;
+
+       & img {
+           margin: 0 auto;
+       }
+   }
+}

@@ -37,6 +37,14 @@
         color: #fff;
     }
 
+    &_lightgrey {
+        color: $lightgrey;
+    }
+
+    &_lightblue {
+        color: $lightblue;
+    }
+
     &_uppercase {
         text-transform: uppercase;
     }

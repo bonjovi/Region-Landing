@@ -1,0 +1,47 @@
+.faces {
+    padding: 140px 0;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    &__face {
+        text-align: center;
+    }
+
+    & img {
+        margin-bottom: 50px;
+    }
+
+    &__link {
+        border-bottom: 1px solid $lightblue;
+        line-height: 18px;
+        display: inline;
+        width: fit-content;
+        transition: border 0.5s;
+        transition: color 0.5s;
+        border-bottom: 1px solid #fff;
+
+        &:hover {
+            text-decoration: none;
+            border-bottom: 1px solid $lightblue;
+        }
+    }
+
+    &__position {
+        margin: 5px 0 20px 0;
+    }
+
+    &__desc {
+        line-height: 24px;
+    }
+
+    &__hr {
+        height: 2px;
+        width: 100%;
+        background-color: #eff2f6;
+        border: none;
+        margin: 100px 0;
+    }
+}
