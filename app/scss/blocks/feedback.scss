@@ -1,0 +1,21 @@
+.feedback {
+    padding: 100px 0 150px 0;
+    background-color: #eff2f6;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__hr {
+        border: none;
+        height: 2px;
+        background-color: #fff;
+        margin: 40px 0 70px 0;
+    }
+
+    &__form {
+        width: 730px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

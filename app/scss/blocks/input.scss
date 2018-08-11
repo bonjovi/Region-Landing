@@ -1,0 +1,68 @@
+.input {
+	background-color: #fff;
+	padding: 16px;
+	width: 100%;
+	margin-bottom: 20px;
+	border: none;
+	position: relative;
+	color: #858c95;
+	box-sizing: border-box;
+	font-family: 'OpenSans Regular';
+	font-size: 14px;
+	outline: none;
+
+	@media only screen and (max-width: 980px) {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	@media only screen and (max-width: 768px) {
+		box-sizing: border-box;
+	}
+}
+
+.notValid {
+	border: 3px solid #ec1a43;
+}
+
+option {
+	font-family: 'Museo';
+	display: block;
+	margin-bottom: 30px;
+	padding: 35px;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+}
+
+.select-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.select-wrapper::after {
+		content: "";
+		width: 8px;
+		height: 8px;
+		border-radius: 1px;
+		border: 2px solid #16adc4;
+		position: absolute;
+		z-index: 3;
+		right: 30px;
+		top: 17px;
+		border-right: none;
+		border-bottom: none;
+		transform: rotate(225deg);
+	}
+
+	select {
+		margin-left: -2px;
+	}
+
+	select.notValid {
+		margin-left: -8px;
+	}

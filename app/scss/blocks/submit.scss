@@ -1,0 +1,41 @@
+.submit {
+	padding: 20px 70px;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: $blue;
+	background-color: transparent;
+	font-family: 'MuseoSans Regular';
+	border: 2px solid $blue;
+	border-radius: 3px;
+	position: relative;
+	cursor: pointer;
+	transition: background-color 1s;
+	transition: color 1s;
+	outline:none;
+	margin-top: 50px;
+
+	@media only screen and (max-width: 768px) {
+		width: 100%;	
+	}
+}
+
+.submit.good {
+	background-color: #44DF86;
+	cursor: default;
+	&:hover {
+		background-color: #44DF86;
+	}
+}
+
+.submit.wrong {
+	background-color: #f95555;
+	cursor: default;
+	&:hover {
+		background-color: #f95555;
+	}
+}
+
+.submit:hover {
+	background-color: $blue;
+	color: #fff;
+}

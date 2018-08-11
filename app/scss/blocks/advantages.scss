@@ -5,7 +5,11 @@
        text-align: center;
 
        & img {
-           margin: 0 auto;
+           margin: 0 auto 40px auto !important;
        }
+   }
+
+   & .row {
+       margin-bottom: 160px;
    }
 }
