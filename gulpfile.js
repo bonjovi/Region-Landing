@@ -35,7 +35,8 @@ gulp.task('clean', function () {
 
 gulp.task('watch', function() {
     browserSync.init({
-        server: "./app"
+        server: "./app/",
+        index: 'irkutsk.html'
     });
 
     gulp.watch('app/scss/blocks/**/*.scss', gulp.series('clean', 'blocks', 'sass'));

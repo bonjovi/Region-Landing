@@ -2,12 +2,21 @@
     background-color: $blue;
     padding-top: 80px;
 
+    & h1 {
+        padding-left: 45px;
+    }
+
     &__church {
         margin-left: -80px;
     }
 
+    &__irkutsk {
+        margin-left: -180px;
+    }
+
     &__info {
         padding-top: 80px;
+        padding-left: 45px;
     }
 
     &__button {
@@ -20,6 +29,11 @@
         cursor: pointer;
         transition: color 0.5s;
         transition: background-color 0.5s;
+        margin-left: 45px;
+
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
 
         &:hover {
             background-color: #fff;
@@ -49,6 +63,18 @@
                 transform: rotate(45deg);
                 margin-top: 8px;
             }
+        }
+
+        
+    }
+
+    @media only screen and (max-width: 768px) {
+        & h1 {
+            font-size: 30px;
+        }
+
+        & .text {
+            text-align: center;
         }
     }
 }

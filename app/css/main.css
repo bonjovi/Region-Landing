@@ -449,25 +449,50 @@ textarea:-ms-input-placeholder {
   padding-top: 50px; }
   .advantages__item {
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .advantages__item {
+        margin-bottom: 60px; } }
     .advantages__item img {
       margin: 0 auto 40px auto !important; }
   .advantages .row {
     margin-bottom: 160px; }
+    @media only screen and (max-width: 768px) {
+      .advantages .row {
+        margin-bottom: 0; } }
+
+body {
+  width: 100%; }
 
 .clients {
   padding: 120px 0 200px 0; }
+  @media only screen and (max-width: 768px) {
+    .clients {
+      text-align: center;
+      padding: 80px 0 100px 0; }
+      .clients img {
+        margin-bottom: 50px; } }
   .clients__logos {
     margin-top: 120px; }
 
 .faces {
-  padding: 140px 0; }
+  padding: 140px 0 0 0; }
+  @media only screen and (max-width: 768px) {
+    .faces {
+      padding-bottom: 0; } }
   .faces__title {
     text-align: center;
     margin-bottom: 80px; }
   .faces__face {
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .faces__face {
+        margin-bottom: 40px; } }
   .faces img {
     margin-bottom: 50px; }
+    @media only screen and (max-width: 768px) {
+      .faces img {
+        margin-top: 50px;
+        width: 100%; } }
   .faces__link {
     border-bottom: 1px solid #5a94d0;
     line-height: 18px;
@@ -508,25 +533,46 @@ textarea:-ms-input-placeholder {
     width: 730px;
     margin: 0 auto;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .feedback__form {
+        width: 100%; } }
 
 .footer {
   padding: 240px 0 90px 0;
   background-color: #1258a7; }
+  @media only screen and (max-width: 768px) {
+    .footer {
+      padding-top: 100px; } }
   .footer__logo {
     margin: 0 auto;
     text-align: center; }
     .footer__logo a {
       display: block; }
   .footer__link {
-    margin: 40px 0 240px 0; }
+    margin: 40px 0 240px 0;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s; }
+    @media only screen and (max-width: 768px) {
+      .footer__link {
+        margin-bottom: 100px; } }
+    .footer__link:hover {
+      color: #ff3647;
+      text-decoration: none; }
+  .footer__copyright {
+    color: #97b2d0; }
 
 .header {
   background-color: #1258a7;
   padding-top: 80px; }
+  .header h1 {
+    padding-left: 45px; }
   .header__church {
     margin-left: -80px; }
+  .header__irkutsk {
+    margin-left: -180px; }
   .header__info {
-    padding-top: 80px; }
+    padding-top: 80px;
+    padding-left: 45px; }
   .header__button {
     padding: 10px 45px 10px 60px;
     background-color: #1e60ab;
@@ -540,7 +586,11 @@ textarea:-ms-input-placeholder {
     -webkit-transition: color 0.5s;
     transition: color 0.5s;
     -webkit-transition: background-color 0.5s;
-    transition: background-color 0.5s; }
+    transition: background-color 0.5s;
+    margin-left: 45px; }
+    @media only screen and (max-width: 768px) {
+      .header__button {
+        display: none; } }
     .header__button:hover {
       background-color: #fff;
       color: #1e60ab; }
@@ -566,13 +616,18 @@ textarea:-ms-input-placeholder {
           -ms-transform: rotate(45deg);
               transform: rotate(45deg);
       margin-top: 8px; }
+  @media only screen and (max-width: 768px) {
+    .header h1 {
+      font-size: 30px; }
+    .header .text {
+      text-align: center; } }
 
 .input {
   background-color: #fff;
   padding: 16px;
   width: 100%;
   margin-bottom: 20px;
-  border: none;
+  border: 1px solid #e4eaf1;
   position: relative;
   color: #858c95;
   box-sizing: border-box;
@@ -586,46 +641,8 @@ textarea:-ms-input-placeholder {
   @media only screen and (max-width: 768px) {
     .input {
       box-sizing: border-box; } }
-
-.notValid {
-  border: 3px solid #ec1a43; }
-
-option {
-  font-family: 'Museo';
-  display: block;
-  margin-bottom: 30px;
-  padding: 35px; }
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
-
-.select-wrapper {
-  position: relative;
-  width: 100%; }
-
-.select-wrapper::after {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 1px;
-  border: 2px solid #16adc4;
-  position: absolute;
-  z-index: 3;
-  right: 30px;
-  top: 17px;
-  border-right: none;
-  border-bottom: none;
-  -webkit-transform: rotate(225deg);
-      -ms-transform: rotate(225deg);
-          transform: rotate(225deg); }
-
-select {
-  margin-left: -2px; }
-
-select.notValid {
-  margin-left: -8px; }
+  .input.notValid {
+    border: 1px solid #ff3d3d; }
 
 .map {
   height: 100px; }
@@ -635,6 +652,8 @@ select.notValid {
     min-height: 100px;
     position: absolute;
     cursor: pointer; }
+  .map iframe {
+    border: none; }
 
 .products {
   background-color: #eff2f6;
@@ -646,6 +665,9 @@ select.notValid {
     margin-top: 60px;
     max-height: 375px;
     box-shadow: 0px 5px 10px -4px rgba(50, 50, 50, 0.15); }
+    @media only screen and (max-width: 768px) {
+      .products__group {
+        max-height: initial; } }
     .products__group_weicon {
       margin-right: 5px;
       background: #fff url(../img/weicon-icon.png) 350px 155px no-repeat; }
@@ -689,7 +711,14 @@ select.notValid {
     margin-top: 70px; }
     .products__logos img {
       margin: 0 auto;
-      display: block; }
+      display: block;
+      -webkit-transition: opacity 0.5s;
+      transition: opacity 0.5s; }
+      @media only screen and (max-width: 768px) {
+        .products__logos img {
+          margin-bottom: 40px; } }
+      .products__logos img:hover {
+        opacity: 0.7; }
 
 .submit {
   padding: 20px 70px;
@@ -750,13 +779,15 @@ select.notValid {
   padding: 16px;
   width: 100%;
   margin-bottom: 20px;
-  border: none;
+  border: 1px solid #e4eaf1;
   position: relative;
   color: #858c95;
   box-sizing: border-box;
   font-family: 'OpenSans Regular';
   font-size: 14px;
   outline: none; }
+  .textarea.notValid {
+    border: 1px solid #ff3d3d; }
 
 .title_xsmall {
   font-size: 16px; }
@@ -808,7 +839,7 @@ select.notValid {
       -ms-flex-align: center;
           align-items: center; }
   .title_city img {
-    margin-right: 25px; }
+    margin-right: 20px; }
 
 .title_centered {
   text-align: center; }

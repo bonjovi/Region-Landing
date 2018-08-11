@@ -4,6 +4,10 @@
    &__item {
        text-align: center;
 
+        @media only screen and (max-width: 768px) {
+            margin-bottom: 60px;
+        }
+
        & img {
            margin: 0 auto 40px auto !important;
        }
@@ -11,5 +15,9 @@
 
    & .row {
        margin-bottom: 160px;
+
+        @media only screen and (max-width: 768px) {
+            margin-bottom: 0;
+        }
    }
 }

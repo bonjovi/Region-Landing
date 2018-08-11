@@ -2,6 +2,10 @@
     padding: 240px 0 90px 0;
     background-color: $blue;
 
+    @media only screen and (max-width: 768px) {
+        padding-top: 100px;
+    }
+
     &__logo {
         margin: 0 auto;
         text-align: center;
@@ -13,5 +17,19 @@
 
     &__link {
         margin: 40px 0 240px 0;
+        transition: color 0.5s;
+
+        @media only screen and (max-width: 768px) {
+            margin-bottom: 100px;
+        }
+
+        &:hover {
+            color: #ff3647;
+            text-decoration: none;
+        }
+    }
+
+    &__copyright {
+        color: #97b2d0;
     }
 }
