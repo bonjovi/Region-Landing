@@ -470,7 +470,8 @@ body {
       text-align: center;
       padding: 80px 0 100px 0; }
       .clients img {
-        margin-bottom: 50px; } }
+        margin-bottom: 50px;
+        width: 100%; } }
   .clients__logos {
     margin-top: 120px; }
 
@@ -568,11 +569,22 @@ body {
     padding-left: 45px; }
   .header__church {
     margin-left: -80px; }
+    @media only screen and (max-width: 768px) {
+      .header__church {
+        margin-left: 0;
+        width: 100%; } }
   .header__irkutsk {
     margin-left: -180px; }
+    @media only screen and (max-width: 768px) {
+      .header__irkutsk {
+        margin-left: 0;
+        width: 100%; } }
   .header__info {
     padding-top: 80px;
     padding-left: 45px; }
+    @media only screen and (max-width: 768px) {
+      .header__info {
+        padding-left: 0; } }
   .header__button {
     padding: 10px 45px 10px 60px;
     background-color: #1e60ab;
@@ -618,7 +630,9 @@ body {
       margin-top: 8px; }
   @media only screen and (max-width: 768px) {
     .header h1 {
-      font-size: 30px; }
+      font-size: 24px;
+      padding-left: 0;
+      line-height: 36px; }
     .header .text {
       text-align: center; } }
 
@@ -848,6 +862,9 @@ body {
           align-items: center; }
   .title_city img {
     margin-right: 20px; }
+    @media only screen and (max-width: 768px) {
+      .title_city img {
+        display: none; } }
 
 .title_centered {
   text-align: center; }
