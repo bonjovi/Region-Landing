@@ -26,19 +26,23 @@ body {
 }
 .clients {
     padding: 120px 0 200px 0;
+    & img {
+        max-width: 100%;
+    }
+
+    & .container {
+        margin-top: 120px;
+    }
 
     @media only screen and (max-width: 768px) {
         text-align: center;
         padding: 80px 0 100px 0;
 
-        & img {
-            margin-bottom: 50px;
-            width: 100%;
-        }
+        
     }
 
     &__logos {
-        margin-top: 120px;
+        
     }
 }
 .faces {
@@ -310,27 +314,46 @@ body {
         padding: 40px 60px 60px 60px;
         background-color: #fff;
         border-radius: 4px;
-        margin-top: 60px;
-        max-height: 375px;
+        height: 100%;
         box-shadow: 0px 5px 10px -4px rgba(50, 50, 50, 0.15);
 
         @media only screen and (max-width: 768px) {
             max-height: initial;
         }
 
+        @media only screen and (max-width: 1200px) {
+            background-image: none !important;
+        }
+        
+
         &_weicon {
             margin-right: 5px;
-            background: #fff url(../img/weicon-icon.png) 350px 155px no-repeat;
+            background: #fff url(../img/weicon-icon.png) 350px 170px no-repeat;
+
+            @media only screen and (max-width: 768px) {
+                margin: 0;
+            }
         }
 
         &_cable {
             margin-left: 5px;
             background: #fff url(../img/cable-icon.png) 400px bottom no-repeat;
+
+            @media only screen and (max-width: 768px) {
+                margin: 0;
+            }
         }
     }
 
     &__groups {
         height: 100%;
+        padding-top: 60px;
+
+        @media only screen and (max-width: 768px) {
+            & > div {
+                margin-bottom: 40px;
+            }
+        }
     }
 
     &__heading {
@@ -386,7 +409,7 @@ body {
             display: block;
             transition: opacity 0.5s;
 
-            @media only screen and (max-width: 768px) {
+            @media only screen and (max-width: 992px) {
                 margin-bottom: 40px;
             }
 
