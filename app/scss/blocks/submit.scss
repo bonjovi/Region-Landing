@@ -19,23 +19,32 @@
 	}
 }
 
-.submit.good {
-	background-color: #44DF86;
-	cursor: default;
-	&:hover {
-		background-color: #44DF86;
-	}
-}
-
-.submit.wrong {
-	background-color: #f95555;
-	cursor: default;
-	&:hover {
-		background-color: #f95555;
-	}
-}
-
 .submit:hover {
 	background-color: $blue;
 	color: #fff;
 }
+
+.submit.good {
+	background-color: #1258A7;
+	border-color: #1258A7;
+	color: #fff;
+	cursor: default;
+	&:hover {
+		background-color: #1258A7;
+		border-color: #1258A7;
+		color: #fff;
+	}
+}
+
+.submit.wrong {
+	background-color: #ff3d3d;
+	border-color: #ff3d3d;
+	color: #fff;
+	cursor: default;
+	&:hover {
+		background-color: #ff3d3d;
+		border-color: #ff3d3d;
+		color: #fff;
+	}
+}
+
